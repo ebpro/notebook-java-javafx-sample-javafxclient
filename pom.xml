@@ -8,14 +8,21 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.release>21</maven.compiler.release>
 
-        <javafx.version>19.0.2.1</javafx.version>
-        <lombok.version>1.18.30</lombok.version>
+        <javafx.version>23.0.2</javafx.version>
+        <lombok.version>1.18.36</lombok.version>
 
         <mainClass>fr.univtln.bruno.samples.jfx.fxapp2.App</mainClass>
         <project.module>fr.univtln.bruno.samples.jfx</project.module>
-        <jdep.java.version>17</jdep.java.version>
+        <jdep.java.version>21</jdep.java.version>
+        <javafx-maven-plugin.version>0.0.8</javafx-maven-plugin.version>
+        <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+        <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
+        <logback-classic.version>1.5.17</logback-classic.version>
+        <javafaker.version>1.0.2</javafaker.version>
+        <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
+        <versions-maven-plugin.version>2.18.0</versions-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -35,9 +42,14 @@
             <version>${lombok.version}</version>
         </dependency>
         <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback-classic.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
-            <version>1.0.2</version>
+            <version>${javafaker.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -45,7 +57,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
                     <annotationProcessorPaths>
                         <annotationProcessorPath>
@@ -59,7 +71,7 @@
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version>
+                <version>${javafx-maven-plugin.version}</version>
                 <configuration>
                     <mainClass>${mainClass}</mainClass>
                 </configuration>
@@ -71,34 +83,21 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>${maven-jar-plugin.version}</version>
                 <configuration>
                     <outputDirectory>${project.build.directory}/modules</outputDirectory>
                 </configuration>
             </plugin>
+
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.4.1</version>
-                <executions>
-                    <execution>
-                        <id>enforce-versions</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <requireMavenVersion>
-                                    <version>3.2.5</version>
-                                </requireMavenVersion>
-                                <requireJavaVersion>
-                                    <version>${maven.compiler.release}</version>
-                                </requireJavaVersion>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>versions-maven-plugin</artifactId>
+            <version>${versions-maven-plugin.version}</version>
+            <configuration>
+                <rulesUri>https://bruno.univ-tln.fr/rules.xml</rulesUri>
+            </configuration>
+        </plugin>
+
         </plugins>
     </build>
 

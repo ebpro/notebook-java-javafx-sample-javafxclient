@@ -1,0 +1,125 @@
+/* General styles */
+.root {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Header styles */
+.header {
+    -fx-background-color: #b7dcea;
+    -fx-background-radius: 20;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.header .title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* Toolbar styles */
+.toolbar {
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 0, 3, 0, 1);
+}
+
+.toolbar .search-field {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 20;
+    -fx-padding: 8px 15px;
+}
+
+.toolbar .search-button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 20px;
+    -fx-background-radius: 20;
+}
+
+/* Data panel styles */
+.data-panel {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+    -fx-background-radius: 8;
+    -fx-padding: 20px;
+}
+
+.data-panel .header {
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.data-panel .subheader {
+    -fx-text-fill: #757575;
+}
+
+/* Results panel styles */
+.results-panel {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+    -fx-background-radius: 8;
+    -fx-padding: 20px;
+}
+
+.results-panel .header {
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.results-panel .subheader {
+    -fx-text-fill: #757575;
+}
+
+/* Detail pane styles */
+.detail-pane {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-padding: 20px;
+}
+
+.detail-pane .header {
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.detail-pane .label {
+    -fx-font-size: 14px;
+}
+
+/* Status bar styles */
+.status-bar {
+    -fx-background-color: #eeeeee;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 8px 15px;
+}
+
+.status-bar .status-label {
+    -fx-text-fill: #757575;
+}
+
+/* Additional styles for better UI */
+.button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 20px;
+    -fx-background-radius: 20;
+}
+
+.text-field {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 20;
+    -fx-padding: 8px 15px;
+}
+
+.label-bold {
+    -fx-font-weight: bold;
+}
+
+.label-italic {
+    -fx-font-style: italic;
+    -fx-text-fill: #757575;
+}

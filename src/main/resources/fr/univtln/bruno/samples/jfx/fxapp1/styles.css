@@ -1,0 +1,89 @@
+/* Main application styles */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Header styles */
+.header {
+    -fx-background-color: #3498db;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.title-label {
+    -fx-text-fill: white;
+}
+
+.subtitle-label {
+    -fx-text-fill: white;
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+}
+
+/* Content area styles */
+.content-area {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+}
+
+.section-header {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.task-list {
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+    -fx-border-color: #e0e0e0;
+}
+
+.task-list .list-cell:selected {
+    -fx-background-color: #e1f5fe;
+    -fx-text-fill: #01579b;
+}
+
+.task-list .list-cell {
+    -fx-padding: 8 5 8 5;
+}
+
+/* Input area styles */
+.input-area {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1 0 0 0;
+}
+
+.input-label {
+    -fx-font-weight: bold;
+}
+
+.status-label {
+    -fx-text-fill: #757575;
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+}
+
+/* Button styles */
+.button {
+    -fx-padding: 7 15 7 15;
+    -fx-background-radius: 3;
+}
+
+.add-button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.add-button:hover {
+    -fx-background-color: #27ae60;
+}
+
+.clear-button {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #424242;
+}
+
+.clear-button:hover {
+    -fx-background-color: #bdbdbd;
+}
