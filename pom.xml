@@ -10,19 +10,19 @@
 
         <maven.compiler.release>21</maven.compiler.release>
 
-        <javafx.version>23.0.2</javafx.version>
-        <lombok.version>1.18.36</lombok.version>
+        <javafx.version>25.0.2</javafx.version>
+        <lombok.version>1.18.42</lombok.version>
 
         <mainClass>fr.univtln.bruno.samples.jfx.fxapp2.App</mainClass>
         <project.module>fr.univtln.bruno.samples.jfx</project.module>
         <jdep.java.version>21</jdep.java.version>
         <javafx-maven-plugin.version>0.0.8</javafx-maven-plugin.version>
-        <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+        <maven-jar-plugin.version>3.5.0</maven-jar-plugin.version>
         <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
-        <logback-classic.version>1.5.17</logback-classic.version>
+        <logback-classic.version>1.5.32</logback-classic.version>
         <javafaker.version>1.0.2</javafaker.version>
-        <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
-        <versions-maven-plugin.version>2.18.0</versions-maven-plugin.version>
+        <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
+        <versions-maven-plugin.version>2.21.0</versions-maven-plugin.version>
     </properties>
 
     <dependencies>

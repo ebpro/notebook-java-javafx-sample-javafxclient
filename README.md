@@ -12,7 +12,7 @@ This project contains two minimal JavaFX applications demonstrating the use of J
 ## Prerequisites
 
 - JDK 21 or higher
-- 
+
 ## Building and Running
 
 ### Using Maven
@@ -26,7 +26,7 @@ To package and run the application using the JavaFX Maven plugin:
 
 ### Using JLink
 
-To package the application with the necessary dependencies and JRE, even with non-modular dependencies, 
+To package the application with the necessary dependencies and JRE, even with non-modular dependencies,
 use the dedicated profile to package the application with the necessary dependencies and JRE:
 
 ```bash
